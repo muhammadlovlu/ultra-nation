@@ -1,0 +1,17 @@
+.country{
+    color:black;
+    margin:20px;
+    width:320px;
+    height:400px;
+    background-color:#8bc34a;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px #525252    ;
+}
+ p {
+    font-weight: bold;
+}
+img {
+    width:150px;
+
+}
