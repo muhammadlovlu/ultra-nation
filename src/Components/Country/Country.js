@@ -1,8 +1,8 @@
 import React from 'react';
 import './country.css';
 const Country = (props) => {
-    console.log("checking from Country component",props)
     const {name,area,population,capital, flag} = props.passingData;
+const addHandle = props.addHandler;
     return (
         <div className="country">
             <h1>{name}</h1>
@@ -10,7 +10,8 @@ const Country = (props) => {
             <p>Area : {area}</p>
             <p>Capital : {capital}</p>
             <p>Flag : </p>
-            <img src={flag} alt=""/>
+            <img src={flag} alt=""/> <br/>
+            <button onClick={()=>addHandle(props.passingData)}>Add Country</button>
         </div>
     );
 };
